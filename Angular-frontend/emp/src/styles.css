@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+ form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ccc;
+    padding: 40px;
+    width: 50%;
+    margin: auto;
+} 
+
+
+.form-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Style for form fields */
+[data-mdb-input-init] {
+    width: 48%; /* Adjust the width as needed */
+    margin-bottom: 16px;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+}
+
+.form-check-inline {
+    margin-right: 16px;
+}
+
+.text-center {
+    text-align: center;
+}

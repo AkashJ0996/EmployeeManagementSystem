@@ -1,0 +1,95 @@
+<form (ngSubmit)="onSubmit()" method="post" style="width: 50%;">
+    <div class="form-row">
+        <!-- Name input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+            <input name="fname" type="text" id="form4Example1" class="form-control" autocomplete="username" [(ngModel)]="employee.fname" />
+            <label class="form-label" for="form4Example1" >First Name</label>
+        </div>
+
+        <div data-mdb-input-init class="form-outline mb-4">
+            <input name="lname" type="text" id="form4Example1.1" class="form-control" autocomplete="name" [(ngModel)]="employee.lname" />
+            <label class="form-label" for="form4Example1.1">Last Name</label>
+        </div>
+    </div>
+    <!-- Contact input -->
+    <div class="form-row">
+    <div data-mdb-input-init class="form-outline mb-4">
+        <input name="email" type="email" id="form4Example2" class="form-control" autocomplete="email"  [(ngModel)]="employee.email" />
+        <label class="form-label" for="form4Example2">Email address</label>
+    </div>
+    <div data-mdb-input-init class="form-outline mb-4">
+        <input name="password" type="password" id="form4Example2.1" class="form-control"  autocomplete="current-password" [(ngModel)]="employee.password" />
+        <label class="form-label" for="form4Example2.1">Password</label>
+        </div>
+    </div>
+    <div class="form-row">
+    <div data-mdb-input-init class="form-outline mb-4">
+        <input name="contact" type="number" id="form4Example2.2" class="form-control" [(ngModel)]="employee.contact"/>
+        <label class="form-label" for="form4Example2.2">Contact No</label>
+    </div>
+
+    <div data-mdb-input-init class="form-outline mb-4">
+        <textarea name="address" class="form-control" id="form4Example3.1" rows="4" [(ngModel)]="employee.address"></textarea>
+        <label class="form-label" for="form4Example3.1">Address</label>
+        </div>
+
+    </div>
+    <div class="form-row">
+    <!-- other details input -->
+    <div data-mdb-input-init class="form-outline mb-4">
+        <input name="dateOfBirth" type="date" id="form4Example2.3" class="form-control" [(ngModel)]="employee.dateOfBirth"/>
+        <label class="form-label" for="form4Example2.3">Date Of birth</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input name="gender" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="M" [(ngModel)]="employee.gender"/>
+        <label class="form-check-label" for="inlineRadio1">Male</label>
+      </div>
+      
+      <div class="form-check form-check-inline">
+        <input name="gender" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="F" [(ngModel)]="employee.gender"/>
+        <label class="form-check-label" for="inlineRadio2">Female</label>
+      </div>
+
+      <div class="form-check form-check-inline">
+        <input name="gender" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="O" [(ngModel)]="employee.gender"/>
+        <label class="form-check-label" for="inlineRadio3">Others</label>
+      </div>
+    </div>
+
+    <div class="form-row">
+    <div data-mdb-input-init class="form-outline mb-4">
+        <input name="role" type="text" id="form4Example2.4" class="form-control" [(ngModel)]="employee.role" />
+        <label class="form-label" for="form4Example2.4">Role(USER/ADMIN) </label>
+    </div>
+    <div data-mdb-input-init class="form-outline mb-4">
+        <input name="joining" type="date" id="form4Example2.5" class="form-control" [(ngModel)]="employee.joining"/>
+        <label class="form-label" for="form4Example2.5">Joining Year </label>
+    </div>
+    </div>
+
+    <div data-mdb-input-init class="form-outline mb-4">
+        <textarea name="jobDescription" class="form-control" id="form4Example3" rows="2" [(ngModel)]="employee.jobDescription" ></textarea>
+        <label class="form-label" for="form4Example3">Job Description</label>
+    </div>
+    
+    <label class="form-label" for="customFile"> </label>
+    <input name="img" type="file" class="form-control" id="customFile" [(ngModel)]="employee.img"/> 
+
+    <!-- Checkbox -->
+    <div class="form-check d-flex justify-content-center mb-4">
+        <input
+        class="form-check-input me-2"
+        type="checkbox"
+        value=""
+        id="form4Example4"
+        checked
+        />
+        <label class="form-check-label" for="form4Example4">
+        Agree to our terms and conditions?
+        </label>
+    </div>
+    <div class="text-center">
+    <!-- Submit button -->
+    <button data-mdb-ripple-init type="submit"  class="btn btn-primary btn-block mb-4">Submit</button>
+    </div>
+</form>

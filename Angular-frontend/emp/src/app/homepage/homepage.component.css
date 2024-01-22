@@ -1,0 +1,8 @@
+.container{
+    width: 100vw;
+    height: 80vh;
+    background-image: url(../../assets/images/1.jpg);
+    background-size:cover;
+
+
+}
